@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+  font-family: 'Dancing Script', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+
+}
+
+h1,h3 {
+  font-size: 7rem;
+  padding-bottom: 3rem;
+}
+.fas {
+  font-size: 7rem;
+  padding: 1rem;
+}
+input{
+  font-size: 4rem;
+  padding: 6rem;
+  margin-bottom: 6rem;
+}
+header {
+  position: fixed;
+  width: 100%;
+  min-height: 10vh;
+  background: #BBB8B2;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+header .logo {
+  color: #2E2E3A;
+  font-size: 100px;
+}
+
+header .logo span {
+  color: #BA3F1D;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+}
+
+header .navbar ul li {
+  margin-left: 76px;
+}
+
+header .navbar ul li a {
+  font-size: 85px;
+  color: #2E2E3A;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #BA3F1D;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 7%;
+  padding-top: 11rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.8)), url("pexels-hoang-bin-92323.jpg")
+  no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+  padding: 4rem  0;
+}
+
+.home .content h3{
+  color: #BA3F1D;
+  font-size: 6rem;
+  padding-bottom: 1rem;
+}
+
+.home .content h1{
+  color: #ECA400;
+  font-size: 7rem;
+}
+
+.home .content p {
+  color: #C5CBD3;
+  font-size: 7rem;
+  padding: 1rem 0;
+}
+
+.about {
+  background: #cfcdc9;
+  padding-bottom: 3rem;
+  min-height: 90vh;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.about .row .image{
+  flex: 1 1 40rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about .row .image img {
+  height: 50rem;
+}
+
+.about .row .content {
+  flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 6rem;
+  color: #ba3f1d;
+}
+.about .row .content p {
+  font-size: 5rem;
+  color: #2e2e3a;
+  padding: 1rem 0;
+}
+
+.about h1 {
+  justify-content: space-around;
+  align-items: center;
+  font-size: 7rem;
+  color: #1f2421;
+  padding-left: 50%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7rem 4rem;
+  font-size: 4rem;
+  color: #fff;
+  background: #ba3f1d;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.heading {
+  text-align: center;
+  color: #ba3f1d;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.heading span {
+  color: #1f2421;
+}
+.contact{
+  background: url("pexels-taryn-elliott-6405694.jpg")
+  no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+
+}
+
+.abcd {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #646E78;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #1f2421;
+}
+
+.contact .row form .inputBox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 10rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+.container {
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.1)), url("pexels-yulia-ilina-9463153.jpg")
+  no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.photo-gallery {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+
+}
+
+.pic {
+  position: relative;
+  height: 70rem;
+  border-radius: 1rem;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
