@@ -9,28 +9,30 @@
   text-decoration: none;
   outline: none;
   text-transform: capitalize;
-
 }
 
-h1,h3 {
+h1, h3 {
   font-size: 7rem;
   padding-bottom: 3rem;
 }
+
 .fas {
   font-size: 7rem;
   padding: 1rem;
 }
-input{
+
+input {
   font-size: 4rem;
   padding: 6rem;
   margin-bottom: 6rem;
 }
+
 header {
   position: fixed;
   width: 100%;
   min-height: 10vh;
   background: #BBB8B2;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -51,7 +53,6 @@ header .navbar ul {
   align-items: center;
   justify-content: center;
   list-style: none;
-
 }
 
 header .navbar ul li {
@@ -79,8 +80,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.8)), url("pexels-hoang-bin-92323.jpg")
-  no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8)), url("pexels-hoang-bin-92323.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -95,16 +95,16 @@ section {
 
 .home .content {
   flex: 1 1 40rem;
-  padding: 4rem  0;
+  padding: 4rem 0;
 }
 
-.home .content h3{
+.home .content h3 {
   color: #BA3F1D;
   font-size: 6rem;
   padding-bottom: 1rem;
 }
 
-.home .content h1{
+.home .content h1 {
   color: #ECA400;
   font-size: 7rem;
 }
@@ -126,10 +126,9 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
-.about .row .image{
+.about .row .image {
   flex: 1 1 40rem;
   padding: 2rem 0;
   text-align: center;
@@ -143,10 +142,11 @@ section {
   flex: 1 1 40rem;
 }
 
-.about .row .content h3{
+.about .row .content h3 {
   font-size: 6rem;
   color: #ba3f1d;
 }
+
 .about .row .content p {
   font-size: 5rem;
   color: #2e2e3a;
@@ -188,16 +188,16 @@ section {
 .heading span {
   color: #1f2421;
 }
-.contact{
-  background: url("pexels-taryn-elliott-6405694.jpg")
-  no-repeat;
+
+.contact {
+  background: url("pexels-taryn-elliott-6405694.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .contact .row {
   display: flex;
   align-items: center;
-
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -206,7 +206,6 @@ section {
   flex: 1 1 45rem;
   padding: 5rem 2rem;
   text-align: center;
-
 }
 
 .abcd {
@@ -227,7 +226,6 @@ section {
   color: #fff;
   font-size: 2rem;
   padding-left: 2rem;
-
 }
 
 .contact .row form .inputBox input {
@@ -238,29 +236,50 @@ section {
   text-transform: none;
   background: none;
 }
+
 .container {
-  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.1)), url("pexels-yulia-ilina-9463153.jpg")
-  no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .01), rgba(0, 0, 0, 0.01)), url("pexels-yulia-ilina-9463153.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .photo-gallery {
   width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
-
+  overflow: hidden;
 }
 
 .pic {
   position: relative;
   height: 70rem;
   border-radius: 1rem;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .pic img {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+}
+
+.pic .info {
+  visibility: hidden;
+}
+
+.pic:hover .info {
+  position: absolute;
+  visibility: visible;
+  bottom: .5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #EC9A83;
+  padding: .5rem;
+  border: .5rem solid #ba3f1d;
+  border-radius: .5rem;
 }
